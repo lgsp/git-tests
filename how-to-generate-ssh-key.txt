@@ -1,0 +1,6 @@
+1. mkdir .ssh
+2. ssh-keygen -t rsa -C "your_email@your_domain.com"
+3. ssh-add -K ~/.ssh/id_rsa
+4. pbcopy < ~/.ssh/id_rsa.pub
+5. Go to Github > SSH and GPG Keys > New SSH Key
+6. ssh -T git@github.com
